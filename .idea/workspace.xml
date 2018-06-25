@@ -8,15 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controllers/ErrorHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controllers/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controllers/PersonaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/core/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/core/Database.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/core/NotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/core/Paginator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Persona.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/APIRESTful-0.1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/APIRESTful-0.1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Area.java" afterDir="false" />
     </list>
@@ -141,8 +132,8 @@
       <file leaf-file-name="AreaController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AreaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="307">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -794,12 +785,12 @@
       <workItem from="1529886501580" duration="8078000" />
       <workItem from="1529902146160" duration="15048000" />
       <workItem from="1529936522801" duration="8276000" />
-      <workItem from="1529946032371" duration="5172000" />
+      <workItem from="1529946032371" duration="5572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51349000" />
+    <option name="totallyTimeSpent" value="51749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1261,8 +1252,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AreaController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="307">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
