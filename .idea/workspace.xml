@@ -137,7 +137,6 @@
       <find>PERSONA</find>
       <find>Area</find>
       <find>AREA</find>
-      <find>Area</find>
     </findStrings>
     <replaceStrings>
       <replace>id_per</replace>
@@ -146,7 +145,6 @@
       <replace>AREA</replace>
       <replace>ActivoEstado</replace>
       <replace>AESTADO</replace>
-      <replace>ActivoEstado</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\JEE_API_REST\RESTful\initial</dir>
@@ -706,11 +704,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55928000" />
+    <option name="totallyTimeSpent" value="56247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
