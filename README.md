@@ -15,7 +15,7 @@ BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
 </pre>
 
-##### Ejecutar Aplicacion ##### 
+##### Ejecutar Aplicacion #####
 <pre>
 rootPath~: java -jar build/libs/APIRESTful-0.1.0.jar
   .   ____          _            __ _ _

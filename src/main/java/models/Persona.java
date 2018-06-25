@@ -1,16 +1,18 @@
 package models;
 
-import com.mysql.jdbc.Statement;
-import config.Constants;
-import config.Database;
-import config.NotFoundException;
-import jdk.nashorn.internal.ir.CatchNode;
+import core.Constants;
+import core.Database;
+import core.NotFoundException;
+import core.Paginator;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 public class Persona {
@@ -59,11 +61,11 @@ public class Persona {
     }
 
     public Integer getTipo_doc_id() {
-        return tipo_doc_id;
+        return tipo_doc_id > 0 ? tipo_doc_id : null;
     }
 
     public Integer getMun_exp_doc_id() {
-        return mun_exp_doc_id;
+        return mun_exp_doc_id > 0 ? mun_exp_doc_id : null;
     }
 
     public String getGen_per() {
@@ -71,19 +73,19 @@ public class Persona {
     }
 
     public String getNom1_per() {
-        return nom1_per.toUpperCase();
+        return nom1_per != null ? nom1_per.toUpperCase() : null;
     }
 
     public String getNom2_per() {
-        return nom2_per.toUpperCase();
+        return nom2_per != null ? nom2_per.toUpperCase() : null;
     }
 
     public String getApe1_per() {
-        return ape1_per.toUpperCase();
+        return ape1_per != null ? ape1_per.toUpperCase() : null;
     }
 
     public String getApe2_per() {
-        return ape2_per.toUpperCase();
+        return ape2_per != null ? ape2_per.toUpperCase() : null;
     }
 
 
@@ -97,7 +99,7 @@ public class Persona {
     }
 
     public Integer getMun_res_per_id() {
-        return mun_res_per_id;
+        return mun_res_per_id > 0 ? mun_res_per_id : null;
     }
 
     public String getDir_per() {
@@ -152,11 +154,13 @@ public class Persona {
         try {
             this.fecha_nac_per = (new SimpleDateFormat("yyyy-MM-dd")).parse(fecha_nac_per);
         } catch (ParseException E) {
-            if (fecha_nac_per.length() > 0)
-                throw new NotFoundException("Formato de fecha no valido", 400);
-            else
-                this.fecha_nac_per = null;
+            if (fecha_nac_per.length() > 0) throw new NotFoundException("Formato de fecha no valido", 400);
+            else this.fecha_nac_per = null;
         }
+    }
+
+    public void setFecha_nac_per(Date fecha_nac_per) {
+        this.fecha_nac_per = (fecha_nac_per);
     }
 
     public void setMun_res_per_id(Integer mun_res_per_id) {
@@ -228,6 +232,7 @@ public class Persona {
             STMT.setString(13, this.cel_per);
             STMT.setString(14, this.email_per);
             STMT.execute();
+            STMT.close();
         } catch (SQLException e) {
             throw new NotFoundException(e.getMessage(), e.getErrorCode());
         }
@@ -254,6 +259,7 @@ public class Persona {
             STMT.setString(14, this.email_per);
             STMT.setString(15, this.id_per);
             STMT.executeUpdate();
+            STMT.close();
         } catch (SQLException e) {
             throw new NotFoundException(e.getMessage(), e.getErrorCode());
         }
@@ -267,9 +273,87 @@ public class Persona {
             PreparedStatement STMT = Constants.DB.prepareStatement(SQL);
             STMT.setString(1, id_per);
             STMT.execute();
+            STMT.close();
         } catch (SQLException e) {
             throw new NotFoundException(e.getMessage(), e.getErrorCode());
         }
         return true;
+    }
+
+    public void load() throws NotFoundException {
+        try {
+            PreparedStatement STMT = Constants.DB.prepareStatement("SELECT * FROM personas WHERE id_per=? OR num_doc_per=?  LIMIT 1");
+            ResultSet Response = null;
+            STMT.setString(1, this.getId_per());
+            STMT.setString(2, this.getId_per());
+            Response = STMT.executeQuery();
+            if (Response.next()) {
+                this.setId_per(Response.getString("id_per"));
+                this.setNum_doc_per(Response.getString("num_doc_per"));
+                this.setTipo_doc_id(Response.getInt("tipo_doc_id"));
+                this.setMun_exp_doc_id(Response.getInt("mun_exp_doc_id"));
+                this.setGen_per(Response.getString("gen_per"));
+                this.setNom1_per(Response.getString("nom1_per"));
+                this.setNom2_per(Response.getString("nom2_per"));
+                this.setApe1_per(Response.getString("ape1_per"));
+                this.setApe2_per(Response.getString("ape2_per"));
+                this.setFecha_nac_per(Response.getDate("fecha_nac_per"));
+                this.setMun_res_per_id(Response.getInt("mun_res_per_id"));
+                this.setDir_per(Response.getString("dir_per"));
+                this.setCel_per(Response.getString("cel_per"));
+                this.setEmail_per(Response.getString("email_per"));
+            }
+            Response.close();
+            STMT.close();
+        } catch (SQLException e) {
+            throw new NotFoundException(e.getMessage(), e.getErrorCode());
+        }
+    }
+
+    public static Paginator collection(Integer Page) throws NotFoundException {
+        List<Object> Personas = new ArrayList<>();
+        Paginator BindData = new Paginator();
+        try {
+            String SQL = "SELECT SQL_CALC_FOUND_ROWS * FROM personas LIMIT ?,40";
+            PreparedStatement STMT = Constants.DB.prepareStatement(SQL);
+            STMT.setInt(1, Page);
+            ResultSet Response = null;
+            Response = STMT.executeQuery();
+            while (Response.next()) {
+                Persona PERSONA = new Persona();
+                PERSONA.setId_per(Response.getString("id_per"));
+                PERSONA.setNum_doc_per(Response.getString("num_doc_per"));
+                PERSONA.setTipo_doc_id(Response.getInt("tipo_doc_id"));
+                PERSONA.setMun_exp_doc_id(Response.getInt("mun_exp_doc_id"));
+                PERSONA.setGen_per(Response.getString("gen_per"));
+                PERSONA.setNom1_per(Response.getString("nom1_per"));
+                PERSONA.setNom2_per(Response.getString("nom2_per"));
+                PERSONA.setApe1_per(Response.getString("ape1_per"));
+                PERSONA.setApe2_per(Response.getString("ape2_per"));
+                PERSONA.setFecha_nac_per(Response.getDate("fecha_nac_per"));
+                PERSONA.setMun_res_per_id(Response.getInt("mun_res_per_id"));
+                PERSONA.setDir_per(Response.getString("dir_per"));
+                PERSONA.setCel_per(Response.getString("cel_per"));
+                PERSONA.setEmail_per(Response.getString("email_per"));
+                Personas.add(PERSONA);
+            }
+
+            Response.close();
+            STMT.close();
+
+            BindData.setRows(Personas);
+            BindData.setPage(Page + 40);
+            STMT = Constants.DB.prepareStatement("SELECT FOUND_ROWS() AS Total");
+            Response = STMT.executeQuery();
+            if (Response.next()) {
+                BindData.setTotal(Response.getInt("Total"));
+            }
+
+            Response.close();
+            STMT.close();
+        } catch (SQLException e) {
+            throw new NotFoundException(e.getMessage(), e.getErrorCode());
+        }
+        return BindData;
     }
 }

@@ -1,7 +1,7 @@
 package controllers;
 
-import config.Constants;
-import config.Database;
+import core.Constants;
+import core.Database;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

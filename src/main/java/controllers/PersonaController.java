@@ -1,16 +1,20 @@
 package controllers;
 
-import config.NotFoundException;
+import core.NotFoundException;
+import core.Paginator;
 import models.Persona;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class PersonaController {
 
-    @RequestMapping(value = "/persona", method = RequestMethod.GET)
-    public Persona GET(@RequestParam(value = "id_per", defaultValue = "") String id_per) {
+    @RequestMapping(value = "/persona/{id_per}", method = RequestMethod.GET)
+    public Persona GET(@PathVariable(value = "id_per") String id_per) throws NotFoundException {
         Persona PERSONA = new Persona();
         PERSONA.setId_per(id_per);
+        PERSONA.load();
         return PERSONA;
     }
 
@@ -58,6 +62,11 @@ public class PersonaController {
     @RequestMapping(value = "/persona/{id_per}", method = RequestMethod.DELETE)
     public Boolean DELETE(@PathVariable(value = "id_per") String id_per) throws NotFoundException {
         return new Persona().delete(id_per);
+    }
+
+    @RequestMapping(value = "/persona/collection", method = RequestMethod.GET)
+    public Paginator LIST(@RequestParam(value = "page", defaultValue = "") Integer Page)throws NotFoundException {
+        return Persona.collection(Page);
     }
 }
 

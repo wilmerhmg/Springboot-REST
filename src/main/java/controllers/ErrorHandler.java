@@ -1,6 +1,6 @@
 package controllers;
 
-import config.NotFoundException;
+import core.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
