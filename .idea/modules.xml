@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APIRESTful.iml" filepath="$PROJECT_DIR$/APIRESTful.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RESTful-ASD.iml" filepath="$PROJECT_DIR$/.idea/modules/RESTful-ASD.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RESTful-ASD_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RESTful-ASD_main.iml" group="RESTful-ASD" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RESTful-ASD_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RESTful-ASD_test.iml" group="RESTful-ASD" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JAVA-RESTful.iml" filepath="$PROJECT_DIR$/.idea/modules/JAVA-RESTful.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JAVA-RESTful_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JAVA-RESTful_main.iml" group="JAVA-RESTful" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JAVA-RESTful_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JAVA-RESTful_test.iml" group="JAVA-RESTful" />
     </modules>
   </component>
 </project>
