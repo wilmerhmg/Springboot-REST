@@ -26,17 +26,113 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Activos.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/Activos.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Activo.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/models/Activo.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="259">
+                  <caret line="339" column="22" selection-start-line="339" selection-start-column="22" selection-end-line="339" selection-end-column="22" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1864#1865#0" expanded="true" />
+                    <element signature="e#1893#1894#0" expanded="true" />
+                    <element signature="e#1927#1928#0" expanded="true" />
+                    <element signature="e#1963#1964#0" expanded="true" />
+                    <element signature="e#1992#1993#0" expanded="true" />
+                    <element signature="e#2023#2024#0" expanded="true" />
+                    <element signature="e#2057#2058#0" expanded="true" />
+                    <element signature="e#2087#2088#0" expanded="true" />
+                    <element signature="e#2123#2124#0" expanded="true" />
+                    <element signature="e#2155#2156#0" expanded="true" />
+                    <element signature="e#2270#2271#0" expanded="true" />
+                    <element signature="e#2321#2322#0" expanded="true" />
+                    <element signature="e#2263#2264#0" expanded="true" />
+                    <element signature="e#2301#2302#0" expanded="true" />
+                    <element signature="e#2338#2339#0" expanded="true" />
+                    <element signature="e#2370#2371#0" expanded="true" />
+                    <element signature="e#2404#2405#0" expanded="true" />
+                    <element signature="e#2435#2436#0" expanded="true" />
+                    <element signature="e#2469#2470#0" expanded="true" />
+                    <element signature="e#2500#2501#0" expanded="true" />
+                    <element signature="e#2535#2536#0" expanded="true" />
+                    <element signature="e#2567#2568#0" expanded="true" />
+                    <element signature="e#2602#2603#0" expanded="true" />
+                    <element signature="e#2634#2635#0" expanded="true" />
+                    <element signature="e#2672#2673#0" expanded="true" />
+                    <element signature="e#2707#2708#0" expanded="true" />
+                    <element signature="e#2903#2904#0" expanded="true" />
+                    <element signature="e#2939#2940#0" expanded="true" />
+                    <element signature="e#2985#2986#0" expanded="true" />
+                    <element signature="e#3023#3024#0" expanded="true" />
+                    <element signature="e#3071#3072#0" expanded="true" />
+                    <element signature="e#3111#3112#0" expanded="true" />
+                    <element signature="e#3157#3158#0" expanded="true" />
+                    <element signature="e#3195#3196#0" expanded="true" />
+                    <element signature="e#3245#3246#0" expanded="true" />
+                    <element signature="e#3287#3288#0" expanded="true" />
+                    <element signature="e#3334#3335#0" expanded="true" />
+                    <element signature="e#3372#3373#0" expanded="true" />
+                    <element signature="e#3435#3436#0" expanded="true" />
+                    <element signature="e#3489#3490#0" expanded="true" />
+                    <element signature="e#3540#3541#0" expanded="true" />
+                    <element signature="e#3582#3583#0" expanded="true" />
+                    <element signature="e#3629#3630#0" expanded="true" />
+                    <element signature="e#3669#3670#0" expanded="true" />
+                    <element signature="e#3716#3717#0" expanded="true" />
+                    <element signature="e#3756#3757#0" expanded="true" />
+                    <element signature="e#3805#3806#0" expanded="true" />
+                    <element signature="e#3847#3848#0" expanded="true" />
+                    <element signature="e#3896#3897#0" expanded="true" />
+                    <element signature="e#3938#3939#0" expanded="true" />
+                    <element signature="e#3993#3994#0" expanded="true" />
+                    <element signature="e#4041#4042#0" expanded="true" />
+                    <element signature="e#4099#4100#0" expanded="true" />
+                    <element signature="e#4151#4152#0" expanded="true" />
+                    <element signature="e#4209#4210#0" expanded="true" />
+                    <element signature="e#4261#4262#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Persona.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/models/Persona.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="140">
+                  <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#880#2032#0" />
+                    <element signature="e#4848#4849#0" expanded="true" />
+                    <element signature="e#4900#4901#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Persona.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/models/Persona.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="29" column="93" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="93" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#4848#4849#0" expanded="true" />
+                    <element signature="e#4900#4901#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,6 +165,7 @@
       <find>desc_tipo</find>
       <find>ActivoTipos</find>
       <find>id_tipo_doc</find>
+      <find>Activos</find>
     </findStrings>
     <replaceStrings>
       <replace>id_per</replace>
@@ -87,6 +184,7 @@
       <replace>nom_tipo_doc</replace>
       <replace>TipoDocs</replace>
       <replace>id</replace>
+      <replace>Activo</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\JEE_API_REST\RESTful\initial</dir>
@@ -456,6 +554,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/models/ActivoTipo.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/models/Area.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/models/Divipol.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/models/Activo.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/models/Empresa.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/models/ActivoEstado.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/models/TipoDocumento.java" root0="SKIP_INSPECTION" />
@@ -509,6 +608,7 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/DivipolController.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Divipol.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Activos.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Activo.java" />
       </list>
     </option>
   </component>
@@ -680,7 +780,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76207000" />
+    <option name="totallyTimeSpent" value="80278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -694,9 +794,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" visible="true" weight="0.25811687" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" weight="0.25811687" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24508321" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24508321" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.32954547" />
       <window_info anchor="right" id="Database" order="3" />
@@ -765,19 +865,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Persona.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#880#2032#0" />
-            <element signature="e#4848#4849#0" expanded="true" />
-            <element signature="e#4900#4901#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -1068,19 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Persona.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="312" column="27" selection-start-line="312" selection-start-column="18" selection-end-line="312" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#880#2032#0" />
-            <element signature="e#4848#4849#0" expanded="true" />
-            <element signature="e#4900#4901#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/Paginator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1193,8 +1267,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Activos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="221">
+          <caret line="26" column="22" lean-forward="true" selection-end-line="360" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Persona.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#880#2032#0" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4900#4901#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Activo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="339" column="22" selection-start-line="339" selection-start-column="22" selection-end-line="339" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1864#1865#0" expanded="true" />
+            <element signature="e#1893#1894#0" expanded="true" />
+            <element signature="e#1927#1928#0" expanded="true" />
+            <element signature="e#1963#1964#0" expanded="true" />
+            <element signature="e#1992#1993#0" expanded="true" />
+            <element signature="e#2023#2024#0" expanded="true" />
+            <element signature="e#2057#2058#0" expanded="true" />
+            <element signature="e#2087#2088#0" expanded="true" />
+            <element signature="e#2123#2124#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#2270#2271#0" expanded="true" />
+            <element signature="e#2321#2322#0" expanded="true" />
+            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="e#2301#2302#0" expanded="true" />
+            <element signature="e#2338#2339#0" expanded="true" />
+            <element signature="e#2370#2371#0" expanded="true" />
+            <element signature="e#2404#2405#0" expanded="true" />
+            <element signature="e#2435#2436#0" expanded="true" />
+            <element signature="e#2469#2470#0" expanded="true" />
+            <element signature="e#2500#2501#0" expanded="true" />
+            <element signature="e#2535#2536#0" expanded="true" />
+            <element signature="e#2567#2568#0" expanded="true" />
+            <element signature="e#2602#2603#0" expanded="true" />
+            <element signature="e#2634#2635#0" expanded="true" />
+            <element signature="e#2672#2673#0" expanded="true" />
+            <element signature="e#2707#2708#0" expanded="true" />
+            <element signature="e#2903#2904#0" expanded="true" />
+            <element signature="e#2939#2940#0" expanded="true" />
+            <element signature="e#2985#2986#0" expanded="true" />
+            <element signature="e#3023#3024#0" expanded="true" />
+            <element signature="e#3071#3072#0" expanded="true" />
+            <element signature="e#3111#3112#0" expanded="true" />
+            <element signature="e#3157#3158#0" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+            <element signature="e#3245#3246#0" expanded="true" />
+            <element signature="e#3287#3288#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+            <element signature="e#3489#3490#0" expanded="true" />
+            <element signature="e#3540#3541#0" expanded="true" />
+            <element signature="e#3582#3583#0" expanded="true" />
+            <element signature="e#3629#3630#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3716#3717#0" expanded="true" />
+            <element signature="e#3756#3757#0" expanded="true" />
+            <element signature="e#3805#3806#0" expanded="true" />
+            <element signature="e#3847#3848#0" expanded="true" />
+            <element signature="e#3896#3897#0" expanded="true" />
+            <element signature="e#3938#3939#0" expanded="true" />
+            <element signature="e#3993#3994#0" expanded="true" />
+            <element signature="e#4041#4042#0" expanded="true" />
+            <element signature="e#4099#4100#0" expanded="true" />
+            <element signature="e#4151#4152#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4261#4262#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
