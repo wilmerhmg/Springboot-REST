@@ -1,9 +1,6 @@
 package models;
 
-import core.Constants;
-import core.Database;
-import core.NotFoundException;
-import core.Paginator;
+import core.*;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,7 +15,7 @@ import java.util.UUID;
 public class Activo {
     private String[] FIELDS = {"id_act", "nom_act", "desc_act", "tipo_id", "srl_act", "num_inv_int_act", "peso_act",
             "alto_act", "ancho_act", "largo_act", "val_comp_act", "fecha_comp_act", "estado_id", "fecha_baja_act",
-            "color_act", "ultima_mod"};
+            "color_act"};
 
     private String id_act, nom_act, desc_act, srl_act, color_act;
     private Integer tipo_id, num_inv_int_act, estado_id;
@@ -26,6 +23,11 @@ public class Activo {
     private Date fecha_comp_act, fecha_baja_act;
 
     public Activo() {
+    }
+
+    public Activo(String id_act, String nom_act) {
+        this.id_act = id_act;
+        this.nom_act = nom_act;
     }
 
     public Activo(String id_act, String nom_act, String desc_act, String srl_act, String color_act, Integer tipo_id,
@@ -201,14 +203,14 @@ public class Activo {
     }
 
     public Boolean validate() throws NotFoundException {
-        if (this.getFecha_comp_act().compareTo(this.getFecha_baja_act()) <= 0)
-            throw new NotFoundException("La fecha de compra no puede ser inferior", 400);
+        if (this.getFecha_comp_act().compareTo(this.getFecha_baja_act()) >= 0)
+            throw new NotFoundException("Las fechas no pueden ser inferiores a la de compra", 400);
         return true;
     }
 
     public Activo save() throws NotFoundException {
         if (!this.validate()) return null;
-        if (this.id_act.equals("") || this.id_act == null)
+        if (this.id_act == null || this.id_act.equals(""))
             return this.insert();
         else
             return this.update();
@@ -294,7 +296,7 @@ public class Activo {
                 this.setId_act(Response.getString("id_act"));
                 this.setNom_act(Response.getString("nom_act"));
                 this.setDesc_act(Response.getString("desc_act"));
-                this.setTipo_id(Response.getInt("tipo_di"));
+                this.setTipo_id(Response.getInt("tipo_id"));
                 this.setSrl_act(Response.getString("srl_act"));
                 this.setNum_inv_int_act(Response.getInt("num_inv_int_act"));
                 this.setPeso_act(Response.getFloat("peso_act"));
@@ -327,7 +329,7 @@ public class Activo {
                 ACTIVO.setId_act(Response.getString("id_act"));
                 ACTIVO.setNom_act(Response.getString("nom_act"));
                 ACTIVO.setDesc_act(Response.getString("desc_act"));
-                ACTIVO.setTipo_id(Response.getInt("tipo_di"));
+                ACTIVO.setTipo_id(Response.getInt("tipo_id"));
                 ACTIVO.setSrl_act(Response.getString("srl_act"));
                 ACTIVO.setNum_inv_int_act(Response.getInt("num_inv_int_act"));
                 ACTIVO.setPeso_act(Response.getFloat("peso_act"));
@@ -357,6 +359,49 @@ public class Activo {
         } catch (SQLException e) {
             throw new NotFoundException(e.getMessage(), e.getErrorCode());
         }
+        return BindData;
+    }
+
+    public static Select2 find(Integer p, String q) {
+        Select2 BindData = new Select2();
+        Integer Pag = 10 * (p - 1);
+        List<Object> ACTIVOS = new ArrayList<>();
+        try {
+            String SQL = "SELECT id_act,nom_act,desc_estado,COALESCE(srl_act,'SIN SERIAL') AS srl_act FROM activos LEFT JOIN activo_tipo ON (activos.tipo_id = activo_tipo.id_tipo) " +
+                    "LEFT JOIN activo_estado ON (activos.estado_id = activo_estado.id_estado) " +
+                    "WHERE (activos.nom_act LIKE ? ) OR (activos.srl_act LIKE ?) ORDER BY activos.nom_act LIMIT ?,10";
+            PreparedStatement STMT = Constants.DB.prepareStatement(SQL);
+            STMT.setString(1, "%" + q + "%");
+            STMT.setString(2, "%" + q + "%");
+            STMT.setInt(3, Pag);
+            ResultSet Response = null;
+            Response = STMT.executeQuery();
+            while (Response.next()) {
+                Select2.Adapter Adapter = new Select2.Adapter();
+                Adapter.setId(Response.getString("id_act"));
+                Adapter.setLabel(Response.getString("nom_act"));
+                Adapter.setMore(Response.getString("srl_act") + " - " + Response.getString("desc_estado"));
+                ACTIVOS.add(Adapter);
+            }
+
+            Response.close();
+            STMT.close();
+
+            BindData.setData(ACTIVOS);
+            STMT = Constants.DB.prepareStatement("SELECT FOUND_ROWS() AS Total");
+            Response = STMT.executeQuery();
+            if (Response.next()) {
+                BindData.setTotal(Response.getInt("Total"));
+            } else {
+                BindData.setTotal(0);
+            }
+
+            Response.close();
+            STMT.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
         return BindData;
     }
 }

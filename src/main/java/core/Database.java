@@ -19,7 +19,6 @@ public class Database {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String servidor = "jdbc:mysql://" + SERVER + ":" + PORT + "/" + DB;
-            System.out.println("Queriendo Conectar " + servidor + "/");
             DBConexion = DriverManager.getConnection(servidor, USERDB, PWDBD);
 
         } catch (ClassNotFoundException ex) {
