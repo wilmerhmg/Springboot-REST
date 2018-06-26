@@ -67,7 +67,7 @@ public class Area {
 
     public Boolean validate() throws NotFoundException {
         if (this.emp_id == null)
-            throw new NotFoundException("Empresa no valida: " + this.emp_id, 400);
+            throw new NotFoundException("EmpresaController no valida: " + this.emp_id, 400);
         if (this.mun_id == null)
             throw new NotFoundException("Municipio no valido: " + this.mun_id, 400);
         if (this.nom_area.length() < 4 || this.nom_area == null)
