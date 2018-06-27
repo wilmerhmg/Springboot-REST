@@ -1,0 +1,20 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "Build Javascript",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "clear": "0.0.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6"
+  },
+  "scripts": {
+    "start": "gulp compile"
+  },
+  "author": "",
+  "license": "MIT"
+}

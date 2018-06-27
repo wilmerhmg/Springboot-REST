@@ -1,9 +1,6 @@
 package models;
 
-import core.Constants;
-import core.Database;
-import core.NotFoundException;
-import core.Paginator;
+import core.*;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -206,7 +203,7 @@ public class Persona {
 
     public Persona save() throws NotFoundException {
         if (!this.validate()) return null;
-        if (this.id_per.equals("") || this.id_per == null)
+        if (this.id_per == null || this.id_per.equals(""))
             return this.insert();
         else
             return this.update();
@@ -280,7 +277,7 @@ public class Persona {
         return true;
     }
 
-    public void load() throws NotFoundException {
+    public void load() throws NotFoundException, NotFoundResource {
         try {
             PreparedStatement STMT = Constants.DB.prepareStatement("SELECT * FROM personas WHERE id_per=? OR num_doc_per=?  LIMIT 1");
             ResultSet Response = null;
@@ -302,6 +299,8 @@ public class Persona {
                 this.setDir_per(Response.getString("dir_per"));
                 this.setCel_per(Response.getString("cel_per"));
                 this.setEmail_per(Response.getString("email_per"));
+            } else {
+                throw new NotFoundResource("Sin resultados", 404, "Not Found");
             }
             Response.close();
             STMT.close();
@@ -347,6 +346,60 @@ public class Persona {
             Response = STMT.executeQuery();
             if (Response.next()) {
                 BindData.setTotal(Response.getInt("Total"));
+            }
+
+            Response.close();
+            STMT.close();
+        } catch (SQLException e) {
+            throw new NotFoundException(e.getMessage(), e.getErrorCode());
+        }
+        return BindData;
+    }
+
+    public static DataTable table(Integer Page, Integer Draw, Integer Length, String Search) throws NotFoundException {
+        DataTable BindData = new DataTable();
+        List<Object> Personas = new ArrayList<>();
+        try {
+            String[] FindFields = {"num_doc_per", "nom1_per", "nom2_per", "ape1_per", "ape2_per", "cel_per", "email_per"};
+            String FILTERS = DataTable.BuildExp(FindFields, Search, true);
+            Integer Index = 0;
+            String SQL = "SELECT SQL_CALC_FOUND_ROWS * FROM personas " + FILTERS + " ORDER BY nom1_per LIMIT ?,?";
+            PreparedStatement STMT = Constants.DB.prepareStatement(SQL);
+            if (!FILTERS.equals("")) {
+                STMT.setString(Index += 1, DataTable.PrepareExp(Search));
+            }
+            STMT.setInt(Index += 1, Page);
+            STMT.setInt(Index += 1, Length);
+            ResultSet Response = null;
+            Response = STMT.executeQuery();
+            while (Response.next()) {
+                Persona PERSONA = new Persona();
+                PERSONA.setId_per(Response.getString("id_per"));
+                PERSONA.setNum_doc_per(Response.getString("num_doc_per"));
+                PERSONA.setTipo_doc_id(Response.getInt("tipo_doc_id"));
+                PERSONA.setMun_exp_doc_id(Response.getInt("mun_exp_doc_id"));
+                PERSONA.setGen_per(Response.getString("gen_per"));
+                PERSONA.setNom1_per(Response.getString("nom1_per"));
+                PERSONA.setNom2_per(Response.getString("nom2_per"));
+                PERSONA.setApe1_per(Response.getString("ape1_per"));
+                PERSONA.setApe2_per(Response.getString("ape2_per"));
+                PERSONA.setFecha_nac_per(Response.getDate("fecha_nac_per"));
+                PERSONA.setMun_res_per_id(Response.getInt("mun_res_per_id"));
+                PERSONA.setDir_per(Response.getString("dir_per"));
+                PERSONA.setCel_per(Response.getString("cel_per"));
+                PERSONA.setEmail_per(Response.getString("email_per"));
+                Personas.add(PERSONA);
+            }
+
+            Response.close();
+            STMT.close();
+
+            BindData.setData(Personas);
+            BindData.setDraw(Draw);
+            STMT = Constants.DB.prepareStatement("SELECT FOUND_ROWS() AS Total");
+            Response = STMT.executeQuery();
+            if (Response.next()) {
+                BindData.setRecordsFiltered(Response.getInt("Total"));
             }
 
             Response.close();

@@ -1,17 +1,19 @@
 package controllers;
 
+import core.DataTable;
 import core.NotFoundException;
+import core.NotFoundResource;
 import core.Paginator;
 import models.Persona;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
+@CrossOrigin(maxAge = 3600)
 @RestController
 public class PersonaController {
 
     @RequestMapping(value = "/persona/{id_per}", method = RequestMethod.GET)
-    public Persona GET(@PathVariable(value = "id_per") String id_per) throws NotFoundException {
+    public Persona GET(@PathVariable(value = "id_per") String id_per) throws NotFoundException, NotFoundResource {
         Persona PERSONA = new Persona();
         PERSONA.setId_per(id_per);
         PERSONA.load();
@@ -65,8 +67,16 @@ public class PersonaController {
     }
 
     @RequestMapping(value = "/persona/collection", method = RequestMethod.GET)
-    public Paginator LIST(@RequestParam(value = "page", defaultValue = "") Integer Page)throws NotFoundException {
+    public Paginator LIST(@RequestParam(value = "page", defaultValue = "0") Integer Page) throws NotFoundException {
         return Persona.collection(Page);
+    }
+
+    @RequestMapping(value = "/persona/datatable", method = RequestMethod.POST)
+    public DataTable Datatable(@RequestParam(value = "start", defaultValue = "0") Integer Page,
+                               @RequestParam(value = "draw", defaultValue = "0") Integer Draw,
+                               @RequestParam(value = "length", defaultValue = "0") Integer Length,
+                               @RequestParam(value = "search[value]", defaultValue = "") String Search) throws NotFoundException {
+        return Persona.table(Page, Draw, Length,Search);
     }
 }
 

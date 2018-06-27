@@ -6,6 +6,7 @@ import core.Paginator;
 import org.springframework.web.bind.annotation.*;
 import models.Area;
 
+@CrossOrigin(maxAge = 3600)
 @RestController
 public class AreaController {
 

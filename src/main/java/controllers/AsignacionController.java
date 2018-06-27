@@ -6,6 +6,7 @@ import core.Paginator;
 import models.Asignacion;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(maxAge = 3600)
 @RestController
 public class AsignacionController {
 

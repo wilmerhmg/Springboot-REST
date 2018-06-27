@@ -6,6 +6,7 @@ import core.Select2;
 import models.Divipol;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(maxAge = 3600)
 @RestController
 public class DivipolController {
 

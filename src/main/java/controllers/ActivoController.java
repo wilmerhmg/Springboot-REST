@@ -7,6 +7,7 @@ import core.Select2;
 import models.Activo;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(maxAge = 3600)
 @RestController
 public class ActivoController {
 
