@@ -50,7 +50,7 @@ public class Activo {
             this.setFecha_baja_act(fecha_baja_act);
             this.setFecha_comp_act(fecha_comp_act);
         } catch (NotFoundException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
     }
 
