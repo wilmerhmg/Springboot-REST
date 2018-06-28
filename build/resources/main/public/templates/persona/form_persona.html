@@ -1,0 +1,119 @@
+<form ng-submit="ok()">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="cancel()">
+            <span aria-hidden="true">×</span>
+        </button>
+        <label class="modal-title width-90 text-center" ng-if="persona.id_per">{{persona.nom1_per}} {{persona.ape1_per}}</label>
+        <label class="modal-title width-90 text-center" ng-if="!persona.id_per">Registrar persona</label>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-3">
+                <label>
+                    <small>Documento</small>
+                </label>
+                <input class="form-control input-sm"
+                       ng-model="persona.num_doc_per"
+                       required=""
+                       type="text"
+                       pattern="[A-Za-z0-9]+"
+                       ng-blur="findPersona()">
+            </div>
+            <div class="col-sm-3">
+                <label>
+                    <small>Tipo Doc</small>
+                </label>
+                <select class="form-control input-sm" ng-model="persona.tipo_doc_id" required="">
+                    <option value="">Seleccionar..</option>
+                    <option ng-repeat="row in tipos_doc" ng-value="row.id_tipo_doc">{{row.nom_tipo_doc}}</option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <label>
+                    <small>Mpio Expedici&oacute;n</small>
+                </label>
+                <input id="persona_mun_exp_doc_id" class="width-100" ng-value="persona.mun_exp_doc_id" type="text">
+            </div>
+            <div class="col-sm-2">
+                <label>
+                    <small>Genero</small>
+                </label>
+                <select class="form-control input-sm" ng-model="persona.gen_per">
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
+                </select>
+            </div>
+        </div>
+        <hr class="space-10">
+        <div class="row">
+            <div class="col-sm-3">
+                <label>
+                    <small>Primer Nombre</small>
+                </label>
+                <input class="form-control input-sm" ng-model="persona.nom1_per" required="" type="text"
+                       pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+">
+            </div>
+            <div class="col-sm-3">
+                <label>
+                    <small>Segundo Nombre</small>
+                </label>
+                <input class="form-control input-sm" ng-model="persona.nom2_per" type="text" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+">
+            </div>
+            <div class="col-sm-3">
+                <label>
+                    <small>Primer Apellido</small>
+                </label>
+                <input class="form-control input-sm" ng-model="persona.ape1_per" required="" type="text"
+                       pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+">
+            </div>
+            <div class="col-sm-3">
+                <label>
+                    <small>Segundo Apellido</small>
+                </label>
+                <input class="form-control input-sm" ng-model="persona.ape2_per" type="text" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+">
+            </div>
+        </div>
+        <hr class="space-10">
+        <div class="row">
+            <div class="col-sm-3">
+                <label>
+                    <small>Fecha Nacimiento</small>
+                </label>
+                <input class="form-control input-sm" ng-model="persona.fecha_nac_per" type="date">
+            </div>
+            <div class="col-sm-6">
+                <label>
+                    <small>Mpio Residencia</small>
+                </label>
+                <input id="persona_mun_res_per_id" class="width-100" ng-value="persona.mun_res_per_id" type="text">
+            </div>
+            <div class="col-sm-3">
+                <label>
+                    <small>Celular</small>
+                </label>
+                <input class="form-control input-sm" ng-model="persona.cel_per" type="tel" pattern="[0-9]{10,25}">
+            </div>
+        </div>
+        <hr class="space-10">
+        <div class="row">
+            <div class="col-sm-4">
+                <label>
+                    <small>E-mail</small>
+                </label>
+                <input class="form-control input-sm" ng-model="persona.email_per" type="email">
+            </div>
+            <div class="col-sm-8">
+                <label>
+                    <small>Direcci&oacute;n</small>
+                </label>
+                <input class="form-control input-sm" ng-model="persona.dir_per" maxlength="512"/>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal" ng-click="cancel()">Cerrar</button>
+        <button type="submit" class="btn btn-primary" ng-disabled="SAVING">
+            <img src="assets/img/prosessing.gif" class="img-responsive pull-left img-loading" ng-if="SAVING"> Guardar
+        </button>
+    </div>
+</form>

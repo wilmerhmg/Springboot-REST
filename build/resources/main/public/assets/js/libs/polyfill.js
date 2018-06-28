@@ -126,8 +126,8 @@ Storage.prototype.getObject = function (key) {
 
 function Notify(DATA) {
 	var type  = DATA.error ? 'error' : 'success';
-	var title = DATA.error ? ('Oops!, Error: ' + DATA.error.code) : ('Operación Culminada');
-	var msg   = DATA.error ? DATA.error.message : "Todas las peticiones se han procesado sin problemas.";
+	var title = DATA.error ? ('Oops!, ' + DATA.error) : ('Operación Culminada');
+	var msg   = DATA.error ? DATA.message : "Todas las peticiones se han procesado sin problemas.";
 	var time  = DATA.error ? 10000 : 3000;
 	
 	new PNotify({

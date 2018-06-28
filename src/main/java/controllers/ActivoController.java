@@ -76,7 +76,7 @@ public class ActivoController {
     }
 
     @RequestMapping(value = "/activo/search", method = RequestMethod.GET)
-    public Select2 LIST(@RequestParam(value = "page", defaultValue = "1") Integer p,
+    public Select2 FIND(@RequestParam(value = "page", defaultValue = "1") Integer p,
                         @RequestParam(value = "q", defaultValue = "") String q) {
         return Activo.find(p, q);
     }
@@ -85,8 +85,8 @@ public class ActivoController {
     public DataTable Datatable(@RequestParam(value = "start", defaultValue = "0") Integer Page,
                                @RequestParam(value = "draw", defaultValue = "0") Integer Draw,
                                @RequestParam(value = "length", defaultValue = "0") Integer Length,
+                               @RequestParam(value = "filtro_tipo_id", defaultValue = "0") Integer filtro_tipo_id,
                                @RequestParam(value = "search[value]", defaultValue = "") String Search) throws NotFoundException {
-        return Activo.table(Page, Draw, Length, Search, new ArrayList<String>());
+        return Activo.table(Page, Draw, Length, Search, filtro_tipo_id);
     }
 }
-

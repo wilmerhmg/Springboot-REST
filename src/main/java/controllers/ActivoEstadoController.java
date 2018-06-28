@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class ActivoEstadoController {
 
-    @RequestMapping(value = "/activo/estado/{id_area}", method = RequestMethod.GET)
-    public ActivoEstado GET(@PathVariable(value = "id_area") Integer id_estado) throws NotFoundException, NotFoundResource {
+    @RequestMapping(value = "/activo/estado/{id_estado}", method = RequestMethod.GET)
+    public ActivoEstado GET(@PathVariable(value = "id_estado") Integer id_estado) throws NotFoundException, NotFoundResource {
         ActivoEstado AESTADO = new ActivoEstado();
         AESTADO.setId_estado(id_estado);
         AESTADO.load();

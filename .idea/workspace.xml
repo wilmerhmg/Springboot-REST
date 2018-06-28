@@ -2,71 +2,258 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f5d3149-e486-461f-9c72-0e47e3369af5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controllers/ActivoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controllers/ActivoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controllers/ActivoEstadoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controllers/ActivoEstadoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controllers/AsignacionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controllers/AsignacionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controllers/PersonaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controllers/PersonaController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/core/DataTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/core/DataTable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Activo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/Activo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/APIRESTful-0.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Asignacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/Asignacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/JAVA-RESTful.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/JAVA-RESTful.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/css/dashboard.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/assets/css/dashboard.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/assets/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/Angular.app.dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/assets/js/Angular.app.dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/Angular.app.login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/App.doodle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/App.result.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/calificaciones_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/ciclos_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/divipola_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/grupos_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/lineas_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/menu_ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/menu_ctrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/modalidades_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/personas_ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/personas_ctrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/programas_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/sedes_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/semilleros_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/sublineas_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/tpdoc_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/usuarios_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.controllers/works_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/assets/js/dashboard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/langs/es_MX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/libs/polyfill.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/assets/js/libs/polyfill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/libs/themes/inlite/theme.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/libs/themes/mobile/theme.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/libs/themes/modern/theme.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/libs/tinymce.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/login.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/advlist/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/anchor/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/autolink/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/autoresize/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/autosave/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/bbcode/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/charmap/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/code/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/codesample/css/prism.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/codesample/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/colorpicker/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/contextmenu/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/directionality/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-cool.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-cry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-embarassed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-foot-in-mouth.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-frown.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-innocent.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-kiss.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-laughing.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-money-mouth.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-sealed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-surprised.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-tongue-out.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-undecided.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-wink.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/img/smiley-yell.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/emoticons/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/fullpage/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/fullscreen/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/help/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/help/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/hr/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/image/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/imagetools/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/importcss/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/insertdatetime/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/legacyoutput/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/link/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/lists/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/media/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/nonbreaking/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/noneditable/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/pagebreak/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/paste/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/preview/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/print/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/save/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/searchreplace/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/spellchecker/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/tabfocus/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/table/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/template/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/textcolor/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/textpattern/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/toc/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/visualblocks/css/visualblocks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/visualblocks/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/visualchars/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/plugins/wordcount/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/result.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/search.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/content.inline.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/content.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/content.mobile.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/fonts/tinymce-mobile.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/fonts/tinymce-small.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/fonts/tinymce-small.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/fonts/tinymce-small.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/fonts/tinymce-small.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/fonts/tinymce.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/fonts/tinymce.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/fonts/tinymce.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/fonts/tinymce.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/img/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/img/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/img/object.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/img/trans.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/skin.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/assets/js/skins/lightgray/skin.mobile.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/css/dashboard.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/css/dashboard.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/Angular.app.dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/js/Angular.app.dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/Angular.app.login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/App.doodle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/App.result.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/calificaciones_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/ciclos_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/divipola_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/grupos_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/lineas_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/menu_ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/menu_ctrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/modalidades_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/personas_ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/personas_ctrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/programas_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/sedes_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/semilleros_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/sublineas_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/tpdoc_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/usuarios_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/works_ctrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/dashboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/js/dashboard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/langs/es_MX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/libs/polyfill.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/js/libs/polyfill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/libs/themes/inlite/theme.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/libs/themes/mobile/theme.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/libs/themes/modern/theme.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/libs/tinymce.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/login.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/advlist/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/anchor/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/autolink/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/autoresize/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/autosave/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/bbcode/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/charmap/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/code/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/codesample/css/prism.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/codesample/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/colorpicker/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/contextmenu/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/directionality/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-cool.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-cry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-embarassed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-foot-in-mouth.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-frown.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-innocent.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-kiss.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-laughing.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-money-mouth.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-sealed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-surprised.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-tongue-out.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-undecided.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-wink.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/img/smiley-yell.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/emoticons/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/fullpage/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/fullscreen/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/help/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/help/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/hr/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/image/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/imagetools/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/importcss/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/insertdatetime/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/legacyoutput/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/link/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/lists/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/media/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/nonbreaking/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/noneditable/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/pagebreak/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/paste/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/preview/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/print/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/save/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/searchreplace/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/spellchecker/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/tabfocus/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/table/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/template/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/textcolor/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/textpattern/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/toc/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/visualblocks/css/visualblocks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/visualblocks/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/visualchars/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/plugins/wordcount/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/result.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/search.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/content.inline.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/content.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/content.mobile.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/fonts/tinymce-mobile.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/fonts/tinymce-small.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/fonts/tinymce-small.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/fonts/tinymce-small.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/fonts/tinymce-small.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/fonts/tinymce.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/fonts/tinymce.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/fonts/tinymce.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/fonts/tinymce.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/img/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/img/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/img/object.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/img/trans.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/skin.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/js/skins/lightgray/skin.mobile.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ActivoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ActivoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ActivoEstadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ActivoEstadoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/AsignacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/AsignacionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/PersonaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/PersonaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/core/DataTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/DataTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Activo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Activo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0.war.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/classes/hello/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/classes/hello/Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/classes/hello/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/classes/hello/Persona.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/hibernate-validator-6.0.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/jackson-core-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/jackson-databind-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/jackson-datatype-jdk8-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/jackson-datatype-jsr310-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/jackson-module-parameter-names-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/jul-to-slf4j-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/log4j-api-2.10.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/log4j-to-slf4j-2.10.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/snakeyaml-1.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-aop-5.0.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-beans-5.0.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-boot-2.0.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-boot-autoconfigure-2.0.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-boot-starter-2.0.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-boot-starter-json-2.0.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-boot-starter-logging-2.0.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-boot-starter-tomcat-2.0.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-boot-starter-web-2.0.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-context-5.0.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-core-5.0.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-expression-5.0.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-jcl-5.0.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-web-5.0.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/spring-webmvc-5.0.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/tomcat-embed-core-8.5.31.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/tomcat-embed-el-8.5.31.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/tomcat-embed-websocket-8.5.31.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIRESTful-0.1.0/WEB-INF/lib/validation-api-2.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/Persona.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Asignacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Asignacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Persona.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -93,11 +280,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Persona.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/Persona.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="5627">
+              <caret line="395" selection-start-line="395" selection-end-line="395" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonaController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/PersonaController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActivoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ActivoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1258">
+              <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,41 +319,8 @@
       <file leaf-file-name="Activo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Activo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6086">
-              <caret line="424" column="37" selection-start-line="424" selection-start-column="37" selection-end-line="424" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/core/DataTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="54" column="80" selection-start-line="54" selection-start-column="80" selection-end-line="54" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivoController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ActivoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="83" column="46" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonaController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/PersonaController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="73" column="3" selection-start-line="73" selection-start-column="3" selection-end-line="79" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="5287">
+              <caret line="375" column="52" selection-start-line="375" selection-start-column="52" selection-end-line="375" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -174,7 +355,6 @@
       <find>desc_tipo</find>
       <find>ActivoTipos</find>
       <find>id_tipo_doc</find>
-      <find>Activos</find>
       <find>PERSONA</find>
       <find>tipo_doc_id</find>
       <find>Divipol</find>
@@ -182,9 +362,11 @@
       <find>Area</find>
       <find>nom_area</find>
       <find>AREA</find>
-      <find>id_area</find>
       <find>&lt;?</find>
       <find>Personas</find>
+      <find>Activos</find>
+      <find>id_area</find>
+      <find>ACTIVOS</find>
     </findStrings>
     <replaceStrings>
       <replace>id_per</replace>
@@ -211,6 +393,9 @@
       <replace>ASG</replace>
       <replace>id_asignacion</replace>
       <replace>Activos</replace>
+      <replace>Asignaciones</replace>
+      <replace>id_estado</replace>
+      <replace>PERSONAS</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\JEE_API_REST\RESTful\initial</dir>
@@ -488,7 +673,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3060078358256" />
+        <entry key="$PROJECT_DIR$" value="3060137173965" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="1304191311" />
       </map>
@@ -629,9 +814,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/hello/Persona.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/GreetingController.java" />
-        <option value="$PROJECT_DIR$/frontend/dist/hola.js" />
         <option value="$PROJECT_DIR$/frontend/dist/index.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/starter/GreetingController.java" />
@@ -645,7 +827,6 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/persona_controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/config/ErrorHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/ErrorHandler400.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/config/Database.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/core/Paginator.java" />
@@ -663,23 +844,27 @@
         <option value="$PROJECT_DIR$/src/main/java/models/Activos.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/Select2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Asignacion.java" />
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/frontend/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/ActivoEstadoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/ActivoTipoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/AreaController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/AsignacionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/DivipolController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/EmpresaController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/TipoDocController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/PersonaController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Persona.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Activo.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/DataTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/AsignacionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/AsignacionAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/configureContentNegotiation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/ActivoEstadoController.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Asignacion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Activo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Persona.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/ActivoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/PersonaController.java" />
       </list>
     </option>
   </component>
@@ -747,14 +932,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-rest-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA-RESTful" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -849,11 +1042,17 @@
       <workItem from="1530127963125" duration="2848000" />
       <workItem from="1530136127283" duration="1392000" />
       <workItem from="1530139078587" duration="314000" />
+      <workItem from="1530151624768" duration="341000" />
+      <workItem from="1530159719734" duration="2233000" />
+      <workItem from="1530188801643" duration="2252000" />
+      <workItem from="1530193038518" duration="886000" />
+      <workItem from="1530200092282" duration="602000" />
+      <workItem from="1530200787821" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117643000" />
+    <option name="totallyTimeSpent" value="123969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -864,18 +1063,18 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.32954547" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" visible="true" weight="0.25811687" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2753404" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30257186" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Gradle" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -917,10 +1116,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/assets/img/user8-128x128.jpg" />
-    <entry file="file://$PROJECT_DIR$/frontend/assets/img/user1-128x128.jpg" />
-    <entry file="file://$PROJECT_DIR$/frontend/assets/img/telescope.svg" />
-    <entry file="file://$PROJECT_DIR$/frontend/assets/img/secure_loading_en.gif" />
     <entry file="file://$PROJECT_DIR$/frontend/assets/js/dashboard.controllers/menu_ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -974,13 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ActivoEstadoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ActivoTipoController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -992,19 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AsignacionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1012,9 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1092,13 +1264,6 @@
     <entry file="file://$PROJECT_DIR$/build/classes/java/main/models/Empresa.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/classes/java/main/controllers/Application.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1118,46 +1283,95 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/DataTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="54" column="80" selection-start-line="54" selection-start-column="80" selection-end-line="54" selection-end-column="80" />
+        <state relative-caret-position="646">
+          <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Activo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/AsignacionAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6086">
-          <caret line="424" column="37" selection-start-line="424" selection-start-column="37" selection-end-line="424" selection-end-column="37" />
+        <state relative-caret-position="-574">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/PersonaController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="73" column="3" selection-start-line="73" selection-start-column="3" selection-end-line="79" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/WebConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ActivoEstadoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AsignacionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Asignacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ActivoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="83" column="46" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
+            <element signature="e#1342#1343#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Persona.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="358" column="117" selection-start-line="358" selection-start-column="33" selection-end-line="358" selection-end-column="117" />
+        <state relative-caret-position="5627">
+          <caret line="395" selection-start-line="395" selection-end-line="395" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4862#4863#0" expanded="true" />
-            <element signature="e#4900#4901#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Activo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5287">
+          <caret line="375" column="52" selection-start-line="375" selection-start-column="52" selection-end-line="375" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ActivoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/PersonaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

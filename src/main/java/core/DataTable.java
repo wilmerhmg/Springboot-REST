@@ -53,7 +53,7 @@ public class DataTable {
 
     public static String BuildExp(String[] FIELDS, String Search, Boolean WH) {
         String EXP = "(CONCAT_WS(' '," + String.join(",", FIELDS) + ") REGEXP ?)";
-        EXP = WH ? "WHERE " + EXP : EXP;
+        EXP = WH ? "WHERE " + EXP : " AND "+EXP;
         return Search.replace(" ", "").length() > 0 ? EXP : "";
     }
 
@@ -64,5 +64,9 @@ public class DataTable {
                 .replace("|", "")
                 .replace(" ", ".+");
         return Regular_EXP;
+    }
+
+    public static String CustomFilter(String WHERE, Integer Value, Boolean WH) {
+        return (Value != null && Value > 0) ? (((WH) ? "WHERE " : "") + WHERE + " ") : "";
     }
 }

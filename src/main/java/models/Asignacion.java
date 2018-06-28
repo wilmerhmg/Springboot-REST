@@ -1,6 +1,7 @@
 package models;
 
 import core.*;
+import jdk.internal.dynalink.support.AbstractCallSiteDescriptor;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -45,21 +46,21 @@ public class Asignacion {
     }
 
     public void setActivo_id(String activo_id) {
-        this.activo_id = activo_id;
+        this.activo_id = (activo_id != null) ? activo_id : "";
     }
 
     public void setArea_id(String area_id) {
-        this.area_id = area_id;
+        this.area_id = (area_id != null) ? area_id : "";
     }
 
     public void setPersona_id(String persona_id) {
-        this.persona_id = persona_id;
+        this.persona_id = (persona_id != null) ? persona_id : "";
     }
 
 
     public Boolean validate() throws NotFoundException {
         if (this.activo_id == null || this.activo_id.equals(""))
-            throw new NotFoundException("Debe seleccionar un activo "+this.activo_id, 400);
+            throw new NotFoundException("Debe seleccionar un activo " + this.activo_id, 400);
         if ((this.area_id == null || this.area_id.equals("")) && (this.persona_id == null || this.persona_id.equals("")))
             throw new NotFoundException("Debe seleccionar un area o una persona", 400);
         return true;
@@ -171,6 +172,55 @@ public class Asignacion {
             Response = STMT.executeQuery();
             if (Response.next()) {
                 BindData.setTotal(Response.getInt("Total"));
+            }
+
+            Response.close();
+            STMT.close();
+        } catch (SQLException e) {
+            throw new NotFoundException(e.getMessage(), e.getErrorCode());
+        }
+        return BindData;
+    }
+
+    public static DataTable table(Integer Page, Integer Draw, Integer Length, String Search) throws NotFoundException {
+        DataTable BindData = new DataTable();
+        List<Object> Asignaciones = new ArrayList<>();
+
+        try {
+            String[] FindFields = {"nom_act", "asignado"};
+            String FILTERS = DataTable.BuildExp(FindFields, Search, true);
+            Integer Index = 0;
+            String SQL = "SELECT SQL_CALC_FOUND_ROWS * FROM view_asignaciones " + FILTERS + " ORDER BY nom_act LIMIT ?,?";
+            PreparedStatement STMT = Constants.DB.prepareStatement(SQL);
+
+            if (!FILTERS.equals("")) {
+                STMT.setString(Index += 1, DataTable.PrepareExp(Search));
+            }
+            STMT.setInt(Index += 1, Page);
+            STMT.setInt(Index += 1, Length);
+            ResultSet Response = null;
+            System.out.println(STMT);
+            Response = STMT.executeQuery();
+            while (Response.next()) {
+                AsignacionAdapter ASIGNACION = new AsignacionAdapter();
+                ASIGNACION.setId_asignacion(Response.getString("id_asignacion"));
+                ASIGNACION.setActivo_id(Response.getString("activo_id"));
+                ASIGNACION.setArea_id(Response.getString("area_id"));
+                ASIGNACION.setPersona_id(Response.getString("persona_id"));
+                ASIGNACION.setNom_act(Response.getString("nom_act"));
+                ASIGNACION.setAsignado(Response.getString("Asignado"));
+                Asignaciones.add(ASIGNACION);
+            }
+
+            Response.close();
+            STMT.close();
+
+            BindData.setData(Asignaciones);
+            BindData.setDraw(Draw);
+            STMT = Constants.DB.prepareStatement("SELECT FOUND_ROWS() AS Total");
+            Response = STMT.executeQuery();
+            if (Response.next()) {
+                BindData.setRecordsFiltered(Response.getInt("Total"));
             }
 
             Response.close();

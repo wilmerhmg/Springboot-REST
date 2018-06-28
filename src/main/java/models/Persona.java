@@ -356,6 +356,47 @@ public class Persona {
         return BindData;
     }
 
+    public static Select2 find(Integer p, String q) {
+        Select2 BindData = new Select2();
+        Integer Pag = 10 * (p - 1);
+        List<Object> PERSONAS = new ArrayList<>();
+        try {
+            String SQL = "SELECT SQL_CALC_FOUND_ROWS id_per, num_doc_per, CONCAT_WS(' ',nom1_per,nom2_per,ape1_per,ape2_per) AS nombre FROM personas " +
+                    "WHERE (CONCAT_WS(' ',nom1_per,nom2_per,ape1_per,ape2_per) LIKE ? ) OR (num_doc_per LIKE ?) ORDER BY nombre LIMIT ?,10";
+            PreparedStatement STMT = Constants.DB.prepareStatement(SQL);
+            STMT.setString(1, "%" + q + "%");
+            STMT.setString(2, "%" + q + "%");
+            STMT.setInt(3, Pag);
+            ResultSet Response = null;
+            Response = STMT.executeQuery();
+            while (Response.next()) {
+                Select2.Adapter Adapter = new Select2.Adapter();
+                Adapter.setId(Response.getString("id_per"));
+                Adapter.setLabel(Response.getString("nombre"));
+                Adapter.setMore(Response.getString("num_doc_per"));
+                PERSONAS.add(Adapter);
+            }
+            Response.close();
+            STMT.close();
+
+            BindData.setData(PERSONAS);
+            STMT = Constants.DB.prepareStatement("SELECT FOUND_ROWS() AS Total");
+            Response = STMT.executeQuery();
+            if (Response.next()) {
+                BindData.setTotal(Response.getInt("Total"));
+            } else {
+                BindData.setTotal(0);
+            }
+
+            Response.close();
+            STMT.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return BindData;
+    }
+
     public static DataTable table(Integer Page, Integer Draw, Integer Length, String Search) throws NotFoundException {
         DataTable BindData = new DataTable();
         List<Object> Personas = new ArrayList<>();

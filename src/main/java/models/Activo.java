@@ -83,6 +83,7 @@ public class Activo {
     }
 
     public Integer getEstado_id() {
+        System.out.println("EL vl de estado: " + estado_id);
         return estado_id > 0 ? estado_id : null;
     }
 
@@ -203,7 +204,10 @@ public class Activo {
     }
 
     public Boolean validate() throws NotFoundException {
-        if (this.getFecha_comp_act().compareTo(this.getFecha_baja_act()) >= 0)
+        if (this.getFecha_comp_act() == null) {
+            throw new NotFoundException("La fecha de compra no puede estar vacia", 400);
+        }
+        if (this.getFecha_baja_act() != null && this.getFecha_comp_act().compareTo(this.getFecha_baja_act()) >= 0)
             throw new NotFoundException("Las fechas no pueden ser inferiores a la de compra", 400);
         return true;
     }
@@ -246,6 +250,7 @@ public class Activo {
 
     protected Activo update() throws NotFoundException {
         String SQL = Database.QueryUpdate("activos", FIELDS, "id_act=?");
+        System.out.println("vl on update: " + this.getEstado_id());
         try {
             PreparedStatement STMT = Constants.DB.prepareStatement(SQL);
             STMT.setString(1, this.getId_act());
@@ -264,6 +269,7 @@ public class Activo {
             STMT.setDate(14, this.getFecha_baja_act());
             STMT.setString(15, this.getColor_act());
             STMT.setString(16, this.getId_act());
+            System.out.println(STMT);
             STMT.executeUpdate();
             STMT.close();
         } catch (SQLException e) {
@@ -367,7 +373,7 @@ public class Activo {
         Integer Pag = 10 * (p - 1);
         List<Object> ACTIVOS = new ArrayList<>();
         try {
-            String SQL = "SELECT id_act,nom_act,desc_estado,COALESCE(srl_act,'SIN SERIAL') AS srl_act FROM activos LEFT JOIN activo_tipo ON (activos.tipo_id = activo_tipo.id_tipo) " +
+            String SQL = "SELECT SQL_CALC_FOUND_ROWS id_act,nom_act,desc_estado,COALESCE(srl_act,'SIN SERIAL') AS srl_act FROM activos LEFT JOIN activo_tipo ON (activos.tipo_id = activo_tipo.id_tipo) " +
                     "LEFT JOIN activo_estado ON (activos.estado_id = activo_estado.id_estado) " +
                     "WHERE (activos.nom_act LIKE ? ) OR (activos.srl_act LIKE ?) ORDER BY activos.nom_act LIMIT ?,10";
             PreparedStatement STMT = Constants.DB.prepareStatement(SQL);
@@ -404,16 +410,20 @@ public class Activo {
         return BindData;
     }
 
-    public static DataTable table(Integer Page, Integer Draw, Integer Length, String Search, ArrayList<String> Filtros) throws NotFoundException {
+    public static DataTable table(Integer Page, Integer Draw, Integer Length, String Search, Integer Filtros) throws NotFoundException {
         DataTable BindData = new DataTable();
         List<Object> Activos = new ArrayList<>();
 
         try {
-            String[] FindFields = {"nom_act", "desc_act", "srl_act"};
-            String FILTERS = DataTable.BuildExp(FindFields, Search, true);
+            String CUSTOMFILTER = DataTable.CustomFilter("tipo_id=?", Filtros, true);
+            String[] FindFields = {"nom_act", "desc_act", "srl_act", "fecha_comp_act"};
+            String FILTERS = DataTable.BuildExp(FindFields, Search, CUSTOMFILTER.equals(""));
             Integer Index = 0;
-            String SQL = "SELECT SQL_CALC_FOUND_ROWS * FROM activos " + FILTERS + " ORDER BY nom_act LIMIT ?,?";
+            String SQL = "SELECT SQL_CALC_FOUND_ROWS * FROM activos " + CUSTOMFILTER + FILTERS + " ORDER BY nom_act LIMIT ?,?";
             PreparedStatement STMT = Constants.DB.prepareStatement(SQL);
+            if (!CUSTOMFILTER.equals("")) {
+                STMT.setString(Index += 1, String.valueOf(Filtros));
+            }
             if (!FILTERS.equals("")) {
                 STMT.setString(Index += 1, DataTable.PrepareExp(Search));
             }
@@ -438,6 +448,7 @@ public class Activo {
                 ACTIVO.setFecha_comp_act(Response.getDate("fecha_comp_act"));
                 ACTIVO.setEstado_id(Response.getInt("estado_id"));
                 ACTIVO.setFecha_baja_act(Response.getDate("fecha_baja_act"));
+                ACTIVO.setColor_act(Response.getString("color_act"));
                 Activos.add(ACTIVO);
             }
 

@@ -1,0 +1,37 @@
+<form ng-submit="ok()">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="cancel()">
+            <span aria-hidden="true">×</span>
+        </button>
+        <label class="modal-title width-90 text-center" ng-if="!activo.id_act">Asignar Item</label>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-12">
+              <label>Item para asignar</label>
+              <input id="Asignacion_activo_id" class="width-100">
+            </div>
+        </div>
+        <div class="row" ng-if="!Asignacion.persona_id">
+            <div class="col-sm-12">
+              <label>Area</label>
+                <select class="form-control input-sm" ng-model="Asignacion.area_id">
+                    <option value="">Seleccionar..</option>
+                    <option ng-repeat="row in AREAS" ng-value="row.id_area">{{row.nom_area}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="row" ng-show="!Asignacion.area_id">
+            <div class="col-sm-12">
+              <label>Persona</label>
+              <input id="Asignacion_persona_id" class="width-100">
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal" ng-click="cancel()">Cerrar</button>
+        <button type="submit" class="btn btn-primary" ng-disabled="SAVING">
+            <img src="assets/img/prosessing.gif" class="img-responsive pull-left img-loading" ng-if="SAVING"> Guardar
+        </button>
+    </div>
+</form>

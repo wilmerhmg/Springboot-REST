@@ -1,5 +1,6 @@
 package controllers;
 
+import core.DataTable;
 import core.NotFoundException;
 import core.NotFoundResource;
 import core.Paginator;
@@ -47,6 +48,14 @@ public class AsignacionController {
     @RequestMapping(value = "/asignacion/collection", method = RequestMethod.GET)
     public Paginator LIST(@RequestParam(value = "page", defaultValue = "0") Integer Page) throws NotFoundException {
         return Asignacion.collection(Page);
+    }
+
+    @RequestMapping(value = "/asignacion/datatable", method = RequestMethod.POST)
+    public DataTable Datatable(@RequestParam(value = "start", defaultValue = "0") Integer Page,
+                               @RequestParam(value = "draw", defaultValue = "0") Integer Draw,
+                               @RequestParam(value = "length", defaultValue = "0") Integer Length,
+                               @RequestParam(value = "search[value]", defaultValue = "") String Search) throws NotFoundException {
+        return Asignacion.table(Page, Draw, Length, Search);
     }
 }
 

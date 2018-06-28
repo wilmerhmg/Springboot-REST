@@ -1,0 +1,90 @@
+<form ng-submit="ok()">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="cancel()">
+            <span aria-hidden="true">×</span>
+        </button>
+        <label class="modal-title width-90 text-center" ng-if="activo.id_act">{{activo.nom_act}}</label>
+        <label class="modal-title width-90 text-center" ng-if="!activo.id_act">Registrar Activo</label>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-4">
+                <label>Nombre Activo</label>
+                <input ng-model="activo.nom_act" type="text" class="form-control input-sm" required ng-disabled="activo.id_act">
+            </div>
+            <div class="col-sm-3">
+                <label>Tipo</label>
+                <select ng-model="activo.tipo_id" class="form-control input-sm" required ng-disabled="activo.id_act">
+                    <option value="">Seleccionar..</option>
+                    <option ng-repeat="row in activo_tipos" ng-value="row.id_tipo">{{row.desc_tipo}}</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <label>Serial Activo</label>
+                <input ng-model="activo.srl_act" type="text" class="form-control input-sm">
+            </div>
+            <div class="col-sm-2">
+                <label>Nº Inv</label>
+                <input ng-model="activo.num_inv_int_act" type="number" class="form-control input-sm" title="Numero de inventario" ng-disabled="activo.id_act">
+            </div>
+        </div>
+        <hr class="space-10">
+        <div class="row">
+            <div class="col-sm-3">
+                <label>Peso (KG)</label>
+                <input ng-model="activo.peso_act" type="number" class="form-control inputsm"  step="0.01" ng-disabled="activo.id_act">
+            </div>
+            <div class="col-sm-3">
+                <label>Alto (Mts)</label>
+                <input ng-model="activo.alto_act" type="number" class="form-control inputsm"  step="0.01" ng-disabled="activo.id_act">
+            </div>
+            <div class="col-sm-3">
+                <label>Ancho (Mts)</label>
+                <input ng-model="activo.ancho_act" type="number" class="form-control inputsm"  step="0.01" ng-disabled="activo.id_act">
+            </div>
+            <div class="col-sm-3">
+                <label>Largo (Mts)</label>
+                <input ng-model="activo.largo_act" type="number" class="form-control inputsm"  step="0.01" ng-disabled="activo.id_act">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <label>Valor Compra: {{activo.val_comp_act|currency:"$":0}}</label>
+                <input ng-model="activo.val_comp_act" type="number" class="form-control input-sm" ng-disabled="activo.id_act">
+            </div>
+            <div class="col-sm-4">
+                <label>Estado</label>
+                <select class="form-control input-sm" ng-model="activo.estado_id" required ng-disabled="activo.id_act">
+                    <option value="">Seleccionar...</option>
+                    <option ng-repeat="row in activo_estados" ng-value="row.id_estado">{{row.desc_estado}}</option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <label>Color</label>
+                <input type="color" class="form-control input-sm" ng-model="activo.color_act" ng-disabled="activo.id_act">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <label>Fecha de compra</label>
+                <input class="form-control input-sm" ng-model="activo.fecha_comp_act" type="date" required ng-disabled="activo.id_act">
+            </div>
+            <div class="col-sm-4">
+                <label>Fecha de baja</label>
+                <input class="form-control input-sm" ng-model="activo.fecha_baja_act" type="date">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label>Detalle/Descripcion</label>
+                <textarea ng-model="activo.desc_act" class="form-control" rows="4"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal" ng-click="cancel()">Cerrar</button>
+        <button type="submit" class="btn btn-primary" ng-disabled="SAVING">
+            <img src="assets/img/prosessing.gif" class="img-responsive pull-left img-loading" ng-if="SAVING"> Guardar
+        </button>
+    </div>
+</form>

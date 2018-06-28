@@ -1,9 +1,6 @@
 package controllers;
 
-import core.DataTable;
-import core.NotFoundException;
-import core.NotFoundResource;
-import core.Paginator;
+import core.*;
 import models.Persona;
 import org.springframework.web.bind.annotation.*;
 
@@ -69,6 +66,12 @@ public class PersonaController {
     @RequestMapping(value = "/persona/collection", method = RequestMethod.GET)
     public Paginator LIST(@RequestParam(value = "page", defaultValue = "0") Integer Page) throws NotFoundException {
         return Persona.collection(Page);
+    }
+
+    @RequestMapping(value = "/persona/search", method = RequestMethod.GET)
+    public Select2 FIND(@RequestParam(value = "page", defaultValue = "1") Integer p,
+                        @RequestParam(value = "q", defaultValue = "") String q) {
+        return Persona.find(p, q);
     }
 
     @RequestMapping(value = "/persona/datatable", method = RequestMethod.POST)

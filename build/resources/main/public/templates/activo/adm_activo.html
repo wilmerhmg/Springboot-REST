@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Administrar Activos</h3>
+                <button class="btn btn-primary btn-sm pull-right" ng-click="adm_activo({})">
+                    <i class="fa fa-plus"></i> Registro Nuevo
+                </button>
+                <select ng-model="filtro_tipo_id" ng-change="aplicaFiltro()" class="form-control input-sm width-20 pull-right">
+                    <option value="">Filtrar Tipo</option>
+                    <option ng-repeat="row in activo_tipos" ng-value="row.id_tipo">{{row.desc_tipo}}</option>
+                </select>
+            </div><!-- /.box-header -->
+            <div class="box-body">
+                <table id="lista-activos" class="table table-condensed table-bordered table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th class="width-25">Activo</th>
+                        <th class="width-10 text-center">Adquirido</th>
+                        <th class="width-20">Serial</th>
+                        <th class="width-20">Tipo</th>
+                        <th class="width-15">Estado</th>
+                        <th class="width-10 text-center">
+                            <button class="btn btn-default btn-block btn-xs actualizar_activos">
+                                <i class="fa fa-refresh"></i>
+                            </button>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th class="width-25">Activo</th>
+                        <th class="width-10 text-center">Adquirido</th>
+                        <th class="width-20">Serial</th>
+                        <th class="width-20">Tipo</th>
+                        <th class="width-15">Estado</th>
+                        <th class="width-10 text-center">
+                            <button class="btn btn-default btn-block btn-xs actualizar_activos">
+                                <i class="fa fa-refresh"></i>
+                            </button>
+                        </th>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div><!-- /.col -->
+</div><!-- /.row -->
