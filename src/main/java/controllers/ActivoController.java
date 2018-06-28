@@ -1,11 +1,10 @@
 package controllers;
 
-import core.NotFoundException;
-import core.NotFoundResource;
-import core.Paginator;
-import core.Select2;
+import core.*;
 import models.Activo;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 
 @CrossOrigin(maxAge = 3600)
 @RestController
@@ -80,6 +79,14 @@ public class ActivoController {
     public Select2 LIST(@RequestParam(value = "page", defaultValue = "1") Integer p,
                         @RequestParam(value = "q", defaultValue = "") String q) {
         return Activo.find(p, q);
+    }
+
+    @RequestMapping(value = "/activo/datatable", method = RequestMethod.POST)
+    public DataTable Datatable(@RequestParam(value = "start", defaultValue = "0") Integer Page,
+                               @RequestParam(value = "draw", defaultValue = "0") Integer Draw,
+                               @RequestParam(value = "length", defaultValue = "0") Integer Length,
+                               @RequestParam(value = "search[value]", defaultValue = "") String Search) throws NotFoundException {
+        return Activo.table(Page, Draw, Length, Search, new ArrayList<String>());
     }
 }
 

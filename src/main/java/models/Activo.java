@@ -316,7 +316,7 @@ public class Activo {
     }
 
     public static Paginator collection(Integer Page) throws NotFoundException {
-        List<Object> Personas = new ArrayList<>();
+        List<Object> Activos = new ArrayList<>();
         Paginator BindData = new Paginator();
         try {
             String SQL = "SELECT SQL_CALC_FOUND_ROWS * FROM activos LIMIT ?,40";
@@ -340,13 +340,13 @@ public class Activo {
                 ACTIVO.setFecha_comp_act(Response.getDate("fecha_comp_act"));
                 ACTIVO.setEstado_id(Response.getInt("estado_id"));
                 ACTIVO.setFecha_baja_act(Response.getDate("fecha_baja_act"));
-                Personas.add(ACTIVO);
+                Activos.add(ACTIVO);
             }
 
             Response.close();
             STMT.close();
 
-            BindData.setRows(Personas);
+            BindData.setRows(Activos);
             BindData.setPage(Page + 40);
             STMT = Constants.DB.prepareStatement("SELECT FOUND_ROWS() AS Total");
             Response = STMT.executeQuery();
@@ -383,7 +383,6 @@ public class Activo {
                 Adapter.setMore(Response.getString("srl_act") + " - " + Response.getString("desc_estado"));
                 ACTIVOS.add(Adapter);
             }
-
             Response.close();
             STMT.close();
 
@@ -402,6 +401,62 @@ public class Activo {
             e.printStackTrace();
         }
 
+        return BindData;
+    }
+
+    public static DataTable table(Integer Page, Integer Draw, Integer Length, String Search, ArrayList<String> Filtros) throws NotFoundException {
+        DataTable BindData = new DataTable();
+        List<Object> Activos = new ArrayList<>();
+
+        try {
+            String[] FindFields = {"nom_act", "desc_act", "srl_act"};
+            String FILTERS = DataTable.BuildExp(FindFields, Search, true);
+            Integer Index = 0;
+            String SQL = "SELECT SQL_CALC_FOUND_ROWS * FROM activos " + FILTERS + " ORDER BY nom_act LIMIT ?,?";
+            PreparedStatement STMT = Constants.DB.prepareStatement(SQL);
+            if (!FILTERS.equals("")) {
+                STMT.setString(Index += 1, DataTable.PrepareExp(Search));
+            }
+            STMT.setInt(Index += 1, Page);
+            STMT.setInt(Index += 1, Length);
+            ResultSet Response = null;
+            System.out.println(STMT);
+            Response = STMT.executeQuery();
+            while (Response.next()) {
+                Activo ACTIVO = new Activo();
+                ACTIVO.setId_act(Response.getString("id_act"));
+                ACTIVO.setNom_act(Response.getString("nom_act"));
+                ACTIVO.setDesc_act(Response.getString("desc_act"));
+                ACTIVO.setTipo_id(Response.getInt("tipo_id"));
+                ACTIVO.setSrl_act(Response.getString("srl_act"));
+                ACTIVO.setNum_inv_int_act(Response.getInt("num_inv_int_act"));
+                ACTIVO.setPeso_act(Response.getFloat("peso_act"));
+                ACTIVO.setAlto_act(Response.getFloat("alto_act"));
+                ACTIVO.setAncho_act(Response.getFloat("ancho_act"));
+                ACTIVO.setLargo_act(Response.getFloat("largo_act"));
+                ACTIVO.setVal_comp_act(Response.getFloat("val_comp_act"));
+                ACTIVO.setFecha_comp_act(Response.getDate("fecha_comp_act"));
+                ACTIVO.setEstado_id(Response.getInt("estado_id"));
+                ACTIVO.setFecha_baja_act(Response.getDate("fecha_baja_act"));
+                Activos.add(ACTIVO);
+            }
+
+            Response.close();
+            STMT.close();
+
+            BindData.setData(Activos);
+            BindData.setDraw(Draw);
+            STMT = Constants.DB.prepareStatement("SELECT FOUND_ROWS() AS Total");
+            Response = STMT.executeQuery();
+            if (Response.next()) {
+                BindData.setRecordsFiltered(Response.getInt("Total"));
+            }
+
+            Response.close();
+            STMT.close();
+        } catch (SQLException e) {
+            throw new NotFoundException(e.getMessage(), e.getErrorCode());
+        }
         return BindData;
     }
 }

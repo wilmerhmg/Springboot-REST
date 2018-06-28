@@ -52,7 +52,7 @@ public class DataTable {
     }
 
     public static String BuildExp(String[] FIELDS, String Search, Boolean WH) {
-        String EXP = "CONCAT_WS(' '," + String.join(",", FIELDS) + ") REGEXP ?";
+        String EXP = "(CONCAT_WS(' '," + String.join(",", FIELDS) + ") REGEXP ?)";
         EXP = WH ? "WHERE " + EXP : EXP;
         return Search.replace(" ", "").length() > 0 ? EXP : "";
     }
